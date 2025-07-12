@@ -3,7 +3,7 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://shopstore-rust.vercel.app/', 'http://localhost:3000/'], // add your frontend domain here
+      origin: "*", // add your frontend domain here
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       headers: ['Content-Type', 'Authorization'],
       credentials: true,
